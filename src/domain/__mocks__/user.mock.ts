@@ -8,7 +8,6 @@ const mockUser = (overrides: Partial<User> = {}): User => {
     name: `${faker.name.firstName()} ${faker.name.lastName()}`,
     email: faker.internet.email(),
     password: faker.internet.password(),
-    balanceId: mongoId,
     ...overrides,
   };
   return user as User;

@@ -1,5 +1,6 @@
 import { IUserRepository } from "../user.repository.interface";
 import { IUserModel, User } from "./../../model/user.model";
+import { UserEntityDTO } from "../../dtos/user.entity.dto";
 
 export class UserRepository implements IUserRepository {
   constructor(private readonly userModel: IUserModel) {}

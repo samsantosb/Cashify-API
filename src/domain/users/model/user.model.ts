@@ -14,11 +14,6 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  balanceId: {
-    type: Schema.Types.ObjectId,
-    ref: "Balance",
-    required: true,
-  },
   createdAt: {
     type: Date,
     default: Date.now,
